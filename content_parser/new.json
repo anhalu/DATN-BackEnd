@@ -1,0 +1,112 @@
+{
+  "request_id": "23bdbad7-c9a0-417a-a073-03d89fd46315",
+  "from_page_idx": null,
+  "to_page_idx": null,
+  "group_forms": [
+    {
+      "id": 1,
+      "name": "Nhóm giấy chứng nhận",
+      "description": "",
+      "start_pattern": {
+        "values": [
+          "GIẤY CHỨNG NHẬN QUYỀN SỬ DỤNG ĐẤT"
+        ],
+        "operation": "AND",
+        "compatible": "20"
+      },
+      "end_pattern": {
+        "values": [],
+        "operation": "AND",
+        "compatible": "20"
+      },
+      "child_forms": [
+        {
+          "id": 295,
+          "name": "TDS",
+          "description": "",
+          "start_pattern": {
+            "values": [],
+            "operation": "AND",
+            "compatible": "20"
+          },
+          "end_pattern": {
+            "values": [],
+            "operation": "AND",
+            "compatible": "15"
+          },
+          "form_rules": [],
+          "fields": [
+            {
+              "id": 1167,
+              "name": "ten",
+              "description": "tên chủ sở hữu",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": true,
+                    "page_idx": 0,
+                    "bounding_box": [
+                      0.1,
+                      0.5,
+                      0.5,
+                      0.5
+                    ]
+                  }
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": null,
+                    "max_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "contains",
+                  "params": {
+                    "values": [],
+                    "compatible": "10"
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

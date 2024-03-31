@@ -1,0 +1,463 @@
+{
+    "request_id": "0baa071d-e803-40cc-a13c-6e1d351d031d",
+    "form_data": [
+        {
+            "id": 1,
+            "name": "identity_card",
+            "start_pattern": {
+                "values": [
+                    "CĂN CƯỚC CÔNG DÂN",
+                    "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM"
+                ],
+                "operation": true,
+                "compatible": "20"
+            },
+            "end_pattern": {
+                "values": [
+                    "Nơi thường trú"
+                ],
+                "operation": true,
+                "compatible": "15"
+            },
+            "description": "thông tin định danh của 1 người",
+            "field_form": [
+                {
+                    "id": 1,
+                    "name": "ID",
+                    "description": "Số ID ",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Họ và tên",
+                                    "ho ten",
+                                    "Họ tên",
+                                    "Full name:",
+                                    "Full name",
+                                    "Họ và tên / Full name:",
+                                    "Họ và tên / Full name"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "SỐ",
+                                    "SỐ / NO.:",
+                                    "NO.:",
+                                    "NO:",
+                                    "/ NO.:"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "regex": "\\d+",
+                                "max_line": null
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "name",
+                    "description": "name of people, this value is uppercase",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Họ và tên",
+                                    "ho ten",
+                                    "Họ tên",
+                                    "Full name:",
+                                    "Full name",
+                                    "Họ và tên / Full name:",
+                                    "Họ và tên / Full name"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Sinh ngày",
+                                    "Sinh ngay",
+                                    "sinh ngay",
+                                    "Ngày sinh",
+                                    "Ngày sinh / Date of birth",
+                                    "Ngày sinh / Date of birth:",
+                                    "Date of birth",
+                                    "Date of birth:"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "0",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": null,
+                                "regex": "" 
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "date_of_birth",
+                    "description": "ngày sinh",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Sinh ngày",
+                                    "Sinh ngay",
+                                    "sinh ngay",
+                                    "Ngày sinh",
+                                    "Ngày sinh / Date of birth",
+                                    "Ngày sinh / Date of birth:",
+                                    "Date of birth",
+                                    "Date of birth:"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Nguyên quán",
+                                    "Nguyên quán:",
+                                    "nguyen quan",
+                                    "Nguyen quan:",
+                                    "Nguyen quan",
+                                    "Giới tính",
+                                    "Gioi tinh",
+                                    "gioi tinh",
+                                    "Gioi tinh / Sex",
+                                    "Gioi tinh / Sex:"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": null,
+                                "regex": "\\d{2}[-|/]\\d{2}[-|/]\\d{4}"
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "Sex",
+                    "description": "Giới tính",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Sex",
+                                    "Sex:",
+                                    "Giới tính / Sex",
+                                    "Giới tính"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Quốc tịch",
+                                    "Quốc tịch / Nationality",
+                                    "Quoc tich"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": null,
+                                "regex": "[aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ ]+"
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "Nationality",
+                    "description": "Quốc tịch",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Quốc tịch",
+                                    "Quốc tịch / Nationality",
+                                    "Quoc tich",
+                                    "Nationality:",
+                                    "Nationality"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Quê quán / Place of origin:",
+                                    "Quê quán / Place of origin",
+                                    "Place of origin",
+                                    "Place of origin:"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": 1,
+                                "regex": "[aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ ]+"
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "domicile",
+                    "description": "Nguyên quán",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Nguyên quán",
+                                    "Nguyen quan",
+                                    "quan:",
+                                    "Nguyên quan",
+                                    "Quê quán / Place of origin:",
+                                    "Quê quán / Place of origin",
+                                    "Place of origin",
+                                    "Place of origin:", 
+                                    "Quê quán"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Nơi",
+                                    "Noi",
+                                    "Nơi DKHK",
+                                    "Nơi DKHK thường trú:",
+                                    "Nơi thường trú",
+                                    "Nơi thường trú / Place of residence"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": null,
+                                "regex": "[,0-9aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ ]+"
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "name": "address",
+                    "description": "Địa chỉ",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Nơi",
+                                    "Noi",
+                                    "Nơi DKHK",
+                                    "Nơi DKHK thường trú:",
+                                    "Nơi thường trú",
+                                    "Nơi thường trú / Place of residence",
+                                    "trú",
+                                    "trú:",
+                                    "tru",
+                                    "Place of residence:",
+                                    "residence"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": null,
+                                "regex": "[,0-9aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ ]+"
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

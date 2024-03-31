@@ -1,0 +1,1 @@
+docker run --gpus all -p 8000:8000 -v $PWD/data:/app/data -v $PWD/reader/models:/app/reader/models -v $PWD/paddle_models:/root/.paddleocr --rm --name ocr_core registry-dev.tcgroup.vn/ocr-core:1.0.3

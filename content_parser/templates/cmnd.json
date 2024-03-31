@@ -1,0 +1,130 @@
+{
+  "document_name": "cmnd",
+  "classification": {
+    "contain": {
+      "max_dist_per": 0.1,
+      "must": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM",
+        "Độc lập - Tự do - Hạnh phúc",
+        "Họ tên"
+      ],
+      "values": [
+        "Nơi ĐKHK thường trú",
+        "CHỨNG MINH NHÂN DÂN"
+      ]
+    },
+    "max_len_line": 70,
+    "max_len": 500
+  },
+  "fields": [
+    {
+      "name": "id",
+      "type": "str",
+      "strip": true,
+      "rules": [
+        {
+          "name": "between",
+          "priority": 2,
+          "params": {
+            "pre_text": "Số",
+            "after_text": null,
+            "max_dist_per": 0.2,
+            "split_line": true,
+            "max_line": 3,
+            "match_case": false
+          }
+        },
+        {
+          "name": "regex",
+          "priority": 1,
+          "params": {
+            "value": "\\d+"
+          }
+        }
+      ]
+    },
+     {
+      "name": "name",
+      "type": "str",
+       "strip": true,
+      "rules": [
+        {
+          "name": "between",
+          "priority": 2,
+          "params": {
+            "pre_text": "Họ tên",
+            "after_text": "Sinh ngày",
+            "max_dist_per": 0.2,
+            "split_line": true,
+            "max_line": 3,
+            "match_case": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "dob",
+      "type": "date",
+      "strip": true,
+      "rules": [
+        {
+          "name": "between",
+          "priority": 2,
+          "params": {
+            "pre_text": "Sinh ngày",
+            "after_text": null,
+            "max_dist_per": 0.2,
+            "split_line": true,
+            "max_line": 3,
+            "match_case": false
+          }
+        },
+        {
+          "name": "regex",
+          "priority": 1,
+          "params": {
+            "value": "\\d{2}-\\d{2}-\\d{4}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "domicile",
+      "type": "str",
+      "strip": true,
+      "rules": [
+        {
+          "name": "between",
+          "priority": 2,
+          "params": {
+            "pre_text": "Nguyên quán",
+            "after_text": "thường trú",
+            "max_dist_per": 0.2,
+            "split_line": true,
+            "max_line": 3,
+            "match_case": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "address",
+      "type": "str",
+      "strip": true,
+      "rules": [
+        {
+          "name": "between",
+          "priority": 2,
+          "params": {
+            "pre_text": "thường trú",
+            "after_text": null,
+            "max_dist_per": 0.2,
+            "split_line": true,
+            "max_line": 3,
+            "match_case": false
+          }
+        }
+      ]
+    }
+  ]
+}

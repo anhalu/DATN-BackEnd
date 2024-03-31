@@ -1,0 +1,15 @@
+type: yolov8
+name: page_layout
+display_name: Page Layout Pretrain
+model_path: page_layout.onnx
+confidence_threshold: 0.3
+input_height: 640
+input_width: 640
+nms_threshold: 0.45
+score_threshold: 0.3
+classes:
+- title
+- text
+- figure
+- signature
+- table

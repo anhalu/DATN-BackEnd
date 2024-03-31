@@ -1,0 +1,8 @@
+data/image/requests
+.db
+.sqlite
+.pkl
+logs
+paddle_models
+reader/models
+.jpg

@@ -1,0 +1,76 @@
+{
+    "file_id": 99961,
+    "form_data": [
+        {
+            "id": 200,
+            "name": "",
+            "start_pattern": {
+                "values": [
+                    "SỞ XÂY DỰNG",
+                    "UBND THÀNH PHÓ HẢI PHÒNG"
+                ],
+                "operation": true,
+                "compatible": "20"
+            },
+            "end_pattern": {
+                "values": [],
+                "operation": true,
+                "compatible": "15"
+            },
+            "description": "",
+            "field_form": [
+                {
+                    "id": 765,
+                    "name": "Chữ ký",
+                    "description": "",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "start": null,
+                                "end": null,
+                                "compatible": "10",
+                                "new_line": null,
+                                "split_line": null
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "start": null,
+                                "end": null,
+                                "compatible": "10",
+                                "new_line": null,
+                                "split_line": null
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "regex": null,
+                                "max_line": null
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ],
+                    "page_field": 0,
+                    "bounding_box": null
+                }
+            ]
+        }
+    ],
+    "form_value_id": 29776
+}
