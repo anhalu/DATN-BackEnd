@@ -17,3 +17,4 @@ logs
 *.jpeg
 .env
 *.txt
+*.db
