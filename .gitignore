@@ -1,0 +1,15 @@
+data
+venv
+.venv
+.idea
+.DS_Store
+__pycache__
+*/__pycache__
+data/chatgpt_cached.json
+layout_parser/PaddleDetection
+layout_parser/output
+layout_parser/models
+reader/output
+*.pdf
+reader/models
+logs
