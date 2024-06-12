@@ -1,0 +1,2489 @@
+{
+  "request_id": "0900dbd6-2032-4ceb-9407-3627fd295ab6",
+  "from_page_idx": null,
+  "to_page_idx": null,
+  "group_forms": [
+    {
+      "id": 1,
+      "name": "Nhóm giấy chứng nhận",
+      "description": "",
+      "start_pattern": {
+        "values": [
+          "GIẤY CHỨNG NHẬN QUYỀN SỬ DỤNG ĐẤT"
+        ],
+        "operation": "AND",
+        "compatible": "20"
+      },
+      "end_pattern": {
+        "values": [],
+        "operation": "AND",
+        "compatible": "20"
+      },
+      "child_forms": [
+        {
+          "id": 295,
+          "name": "TDS",
+          "description": "",
+          "start_pattern": {
+            "values": [
+              "GIẤY CHỨNG NHẬN QUYỀN sử DỤNG ĐẤT QUYỀN sở HỮU NHÀ ở VÀ TÀI SẢN KHÁC GẮN LIỀN với ĐẤT"
+            ],
+            "operation": "AND",
+            "compatible": "20"
+          },
+          "end_pattern": {
+            "values": [],
+            "operation": "AND",
+            "compatible": "15"
+          },
+          "form_rules": [
+            {
+              "id": 1,
+              "name": "form_rule_group_object",
+              "params": {
+                "main_field_id": 1187,
+                "list_field_in_object": [
+                  1181,
+                  1182,
+                  1183,
+                  1184,
+                  1185,
+                  1186,
+                  1188,
+                  1190,
+                  1192,
+                  1193,
+                  1194,
+                  1195
+                ]
+              }
+            }
+          ],
+          "fields": [
+            {
+              "id": 1224,
+              "name": "uyQuyenKy",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1188,
+              "name": "tenDanToc",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1189,
+              "name": "hoGiaDinh",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1226,
+              "name": "soHoSoGoc",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1218,
+              "name": "Column AL",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": null,
+                    "max_line": null,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "contains",
+                  "params": {
+                    "values": [],
+                    "compatible": "10"
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1191,
+              "name": "inHoOngBa",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1231,
+              "name": "loaiMucDichSuDungId",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1196,
+              "name": "hoTen2",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1197,
+              "name": "hoDem2",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1199,
+              "name": "namSinh2",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1230,
+              "name": "thuaDatId",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1232,
+              "name": "loaiMucDichSuDungQuyHoachId",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1200,
+              "name": "gioiTinh2",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1186,
+              "name": "namSinh",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "Sinh năm:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "CMND số:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": null,
+                    "max_line": null,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "contains",
+                  "params": {
+                    "values": [],
+                    "compatible": "10"
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1198,
+              "name": "ten2",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1203,
+              "name": "quocTichID21",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1204,
+              "name": "quocTichID22",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1241,
+              "name": "dienTichPhapLy",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1206,
+              "name": "soGiayTo2",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1207,
+              "name": "ngayCap2",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1208,
+              "name": "noiCap2",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1209,
+              "name": "dangKyThuaId",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1210,
+              "name": "donDangKyId",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1211,
+              "name": "daDangKy",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1219,
+              "name": "donViCap",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": null,
+                    "max_line": null,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": false,
+                    "page_idx": null,
+                    "bounding_box": [
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1212,
+              "name": "giayChungNhanId",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1213,
+              "name": "loaiGiayChungNhanId",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1250,
+              "name": "kyHieuMDGiayCN",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1225,
+              "name": "tenNguoiKy",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "PHÓ CHỦ TỊCH"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": null,
+                    "max_line": 1,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": false,
+                    "page_idx": 1,
+                    "bounding_box": [
+                      0.25,
+                      0.68,
+                      0.52,
+                      0.91
+                    ]
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1227,
+              "name": "soHoSoGocCu",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1214,
+              "name": "tinhTrangGiayChungNhan",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1233,
+              "name": "mucDichSuDungGhep",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1252,
+              "name": "xaID",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1215,
+              "name": "maVach",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": false,
+                    "page_idx": 0,
+                    "bounding_box": [
+                      0.55,
+                      0.81,
+                      0.8,
+                      0.97
+                    ]
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1251,
+              "name": "hinhThucSoHuu",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1187,
+              "name": "bSex",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": "(?i)(ông|bà)",
+                    "max_line": null,
+                    "word_exactly": true
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1254,
+              "name": "ngayDangKy",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1236,
+              "name": "soHieuToBanDo",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "b Tờ bản đồ số:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "c Địa chi thửa đất:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": false,
+                    "page_idx": 1,
+                    "bounding_box": [
+                      0,
+                      0.01,
+                      0.52,
+                      0.36
+                    ]
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "contains",
+                  "params": {
+                    "values": [],
+                    "compatible": "10"
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1201,
+              "name": "tenDanToc2",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1202,
+              "name": "diaChi2",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1192,
+              "name": "loaiGiayTo",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": "CMND|CCCD",
+                    "max_line": null,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1228,
+              "name": "trangThai",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1246,
+              "name": "kyHieuMDKKe",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1253,
+              "name": "duDieuKien",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1255,
+              "name": "donDangKyId",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1195,
+              "name": "noiCap",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "tại"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": null,
+                    "max_line": 1,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "contains",
+                  "params": {
+                    "values": [],
+                    "compatible": "10"
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1205,
+              "name": "loaiGiayTo2",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1229,
+              "name": "daMucDichSuDungId",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1234,
+              "name": "diaChiThuaDat",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "Địa chi thửa đất:",
+                      "c Địa chi thửa đất:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "di Diện tích:",
+                      "Diện tích:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": false,
+                    "page_idx": 1,
+                    "bounding_box": [
+                      0,
+                      0.02,
+                      0.52,
+                      0.35
+                    ]
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "contains",
+                  "params": {
+                    "values": [],
+                    "compatible": "10"
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1235,
+              "name": "loaiMucDichSuDungKiemKeId",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1194,
+              "name": "ngayCap",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "cấp ngày"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "tại"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": null,
+                    "max_line": null,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "contains",
+                  "params": {
+                    "values": [],
+                    "compatible": "10"
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1249,
+              "name": "TenMDGiayCN",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "e. Mục đích sử dụng;",
+                      "Mục đích sử dụng;"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "g Thời hạn sử dụng:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": false,
+                    "page_idx": 1,
+                    "bounding_box": [
+                      0,
+                      0.01,
+                      0.51,
+                      0.34
+                    ]
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "contains",
+                  "params": {
+                    "values": [],
+                    "compatible": "10"
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1256,
+              "name": "ngaychinhsua",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1257,
+              "name": "nguoisuaid",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1242,
+              "name": "datTranhChap",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": null,
+                    "max_line": null,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "contains",
+                  "params": {
+                    "values": [],
+                    "compatible": "10"
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1248,
+              "name": "kyHieuMDQHoach",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": null,
+                    "max_line": null,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "contains",
+                  "params": {
+                    "values": [],
+                    "compatible": "10"
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1237,
+              "name": "soHieuToBanDoCu",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": null,
+                    "max_line": null,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": false,
+                    "page_idx": null,
+                    "bounding_box": [
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1239,
+              "name": "soThuTuThuaCu",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": null,
+                    "max_line": null,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": false,
+                    "page_idx": 1,
+                    "bounding_box": [
+                      0.49,
+                      0.5,
+                      0.99,
+                      0.97
+                    ]
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1240,
+              "name": "dienTich",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "di Diện tích:",
+                      "Diện tích:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "(Bằng chữ:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": false,
+                    "page_idx": 1,
+                    "bounding_box": [
+                      0,
+                      0.01,
+                      0.51,
+                      0.36
+                    ]
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "contains",
+                  "params": {
+                    "values": [],
+                    "compatible": "10"
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1243,
+              "name": "suDungChung",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "đ Hình thức sử dụng:",
+                      "Hình thức sử dụng:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "e. Mục đích sử dụng;"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": false,
+                    "page_idx": 1,
+                    "bounding_box": [
+                      0.01,
+                      0.01,
+                      0.52,
+                      0.37
+                    ]
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "contains",
+                  "params": {
+                    "values": [],
+                    "compatible": "10"
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1247,
+              "name": "tenMDQHoach",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "e. Mục đích sử dụng;",
+                      "Mục đích sử dụng;"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "g Thời hạn sử dụng:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": false,
+                    "page_idx": 1,
+                    "bounding_box": [
+                      0,
+                      0.01,
+                      0.52,
+                      0.34
+                    ]
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "contains",
+                  "params": {
+                    "values": [],
+                    "compatible": "10"
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1181,
+              "name": "quocTichID11",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1190,
+              "name": "diaChi",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "Địa chỉ thường trú;"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "THU HỔI GIẤY"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": null,
+                    "max_line": null,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "contains",
+                  "params": {
+                    "values": [],
+                    "compatible": "10"
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1217,
+              "name": "Column AK",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1182,
+              "name": "quocTichID12",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1216,
+              "name": "soHieuGiayChungNhan",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": null,
+                    "max_line": null,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": false,
+                    "page_idx": 0,
+                    "bounding_box": [
+                      0.85,
+                      0.84,
+                      1,
+                      0.96
+                    ]
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1220,
+              "name": "soVaoSo",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "đổ vẫn số cấp giấy."
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": null,
+                    "max_line": 1,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": false,
+                    "page_idx": 1,
+                    "bounding_box": [
+                      0.02,
+                      0.88,
+                      0.37,
+                      1
+                    ]
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1183,
+              "name": "hoTen",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "Ông:",
+                      "Bà:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "Sinh năm:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": null,
+                    "max_line": null,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "contains",
+                  "params": {
+                    "values": [],
+                    "compatible": "10"
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1238,
+              "name": "soThuTuThua",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "a Thửa đất số:",
+                      "Thửa đất số:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "b Tờ bản đồ số:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": null,
+                    "max_line": null,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": false,
+                    "page_idx": 1,
+                    "bounding_box": [
+                      0,
+                      0.01,
+                      0.51,
+                      0.36
+                    ]
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1244,
+              "name": "thoiHanSuDung",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "g Thời hạn sử dụng:",
+                      "Thời hạn sử dụng:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "h Nguồn gốc sử dụng:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": null,
+                    "max_line": null,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": false,
+                    "page_idx": 1,
+                    "bounding_box": [
+                      0.01,
+                      0.01,
+                      0.51,
+                      0.37
+                    ]
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1221,
+              "name": "ngayVaoSo",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": "(?i)(ngày).{0,25}(?i)(|\\/)\\s*\\d+",
+                    "max_line": null,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": false,
+                    "page_idx": 1,
+                    "bounding_box": [
+                      0.78,
+                      0.49,
+                      1,
+                      0.91
+                    ]
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1184,
+              "name": "hoDem",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1222,
+              "name": "sovaosocu",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1245,
+              "name": "tenMDKKe",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "e. Mục đích sử dụng;",
+                      "Mục đích sử dụng;"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "g Thời hạn sử dụng:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": null,
+                    "max_line": null,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": false,
+                    "page_idx": 1,
+                    "bounding_box": [
+                      0,
+                      0.02,
+                      0.51,
+                      0.36
+                    ]
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1185,
+              "name": "ten",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1193,
+              "name": "soGiayTo",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "CMND số:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "cấp ngày"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": null,
+                    "max_line": null,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "contains",
+                  "params": {
+                    "values": [],
+                    "compatible": "10"
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            },
+            {
+              "id": 1223,
+              "name": "ngayvaosocu",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "regex",
+                  "params": {
+                    "regex": "(?i)(ngày).{0,25}(?i)(|\\/)\\s*\\d+",
+                    "max_line": null,
+                    "word_exactly": false
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": false,
+                    "page_idx": 1,
+                    "bounding_box": [
+                      0.23,
+                      0.67,
+                      0.51,
+                      0.92
+                    ]
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

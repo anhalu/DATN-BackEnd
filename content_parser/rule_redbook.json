@@ -1,0 +1,1124 @@
+{
+    "request_id": "5c89ed48-7d68-44a9-969a-42ef2ec51602",
+    "form_data": [
+        {
+            "id": 1,
+            "name": "identity_card",
+            "start_pattern": {
+                "values": [
+                    "GIẤY CHỨNG NHẬN QUYÊN SỬ DỤNG ĐẤT QUYỀN SỞ HỮU VÀ TÀI SẢN KHÁC GÁN LIỀN VỚI ĐẤT", 
+                    "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM"
+                ],
+                "operation" : true, 
+                "compatible": "15"
+            },
+            "end_pattern": {
+                "values": [
+                ],
+                "operation" : false,  
+                "compatible": "15"
+            },
+            "description": "So do ",
+            "field_form": [
+                {
+                    "id": 1,
+                    "name": "Tên",
+                    "description": "name",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Ông:"
+                                ],
+                                "start": "271",
+                                "end": "492",
+                                "compatible": null,
+                                "new_line": null,
+                                "split_line": null
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Năm sinh:"
+                                ],
+                                "start": "271",
+                                "end": "492",
+                                "compatible": null,
+                                "new_line": null,
+                                "split_line": null
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "regex": "",
+                                "max_line": null
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": null
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "Năm sinh",
+                    "description": "date of birth",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Sinh nam",
+                                    "Sinh năm",
+                                    "Sinh",
+                                    "Sinh nam",
+                                    "Sinh năm:"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "CMND",
+                                    "CMND số"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "0",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": 1,
+                                "regex": "\\d{2}[-|/]\\d{2}[-|/]\\d{4}"
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "Số ID",
+                    "description": "Id number",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "CMND",
+                                    "CMND số"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Địa chỉ thường trú", 
+                                    "Dia chi thuong tru"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": null,
+                                "regex": "\\d+"
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "Địa chỉ thường trú",
+                    "description": "Địa chỉ thường trú",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Địa chỉ thường trú",
+                                    "thường trú"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": 1,
+                                "regex": ""
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "name": "Lô đất số",
+                    "description": "số lô đất",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Lô dất số ",
+                                    "Lô dất số",
+                                    "đất số"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "b. Tờ bản đồ số:",
+                                    "b. Tờ bản đồ số"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": null,
+                                "regex": ""
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "name": "Tờ bản đồ số",
+                    "description": "tờ bản đồ số",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "b. Tờ ban đồ số:",
+                                    "b. To ban do so"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "20",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Địa chỉ thửa đất",
+                                    "c. Địa chỉ thửa đất:",
+                                    "Dia chi thua dat:"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "0",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": null,
+                                "regex": "[aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ0123456789 ]+"
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "name": "Địa chỉ thửa đất",
+                    "description": "số lô đất",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Địa chỉ thửa đất",
+                                    "c. Địa chỉ thửa đất:",
+                                    "Dia chi thua dat:"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "d. Diện tích",
+                                    "d. Dien tich",
+                                    "d. Diện tích:"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "0",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": null,
+                                "regex": ""
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "name": "Diện tích",
+                    "description": "Diện tích thửa đất",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "d. Diện tích",
+                                    "d. Dien tich",
+                                    "d. Diện tích:"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "0",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "đ: Hình thức sử dụng:",
+                                    "đ: Hình thức",
+                                    "d: Hinh thuc",
+                                    "d: Hinh thuc su dung"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": null,
+                                "regex": ""
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "name": "Hình thức sử dụng ",
+                    "description": "Nguyên quán",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "đ: Hình thức sử dụng:",
+                                    "đ: Hình thức",
+                                    "d: Hinh thuc",
+                                    "d: Hinh thuc su dung"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "e. Mục đích sử dụng",
+                                    "e. Mục đích",
+                                    "e. Muc dich su dung",
+                                    "e. Muc dich"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": null,
+                                "regex": ""
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "name": "Mục đích sử dụng",
+                    "description": "Địa chỉ",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "e. Mục đích sử dụng",
+                                    "e. Mục đích",
+                                    "e. Muc dich su dung",
+                                    "e. Muc dich"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "g. Thời hạn sử dụng:",
+                                    "g. Thời hạn",
+                                    "g. Thoi han",
+                                    "g. Thoi han su dung"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": null,
+                                "regex": ""
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 11,
+                    "name": "Thời hạn sử dụng",
+                    "description": "Địa chỉ",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "g. Thời hạn sử dụng:",
+                                    "g. Thoi han su dung"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "h. Nguồn gốc sử dụng:",
+                                    "h. Nguon goc su dung",
+                                    "h. Nguon goc su dung"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": null,
+                                "regex": ""
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 12,
+                    "name": "Nguồn gốc sử dụng",
+                    "description": "Địa chỉ",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "h. Nguồn gốc sử dụng:",
+                                    "h. Nguon goc su dung",
+                                    "h. Nguon goc su dung"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "2. Nhà ở",
+                                    "2. Nha o",
+                                    "2. Nhà ở -/-"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": null,
+                                "regex": ""
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 13,
+                    "name": "Loại nhà ở",
+                    "description": "",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "a. Loại nhà ở",
+                                    "a. Loai nha o"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "b. Diện tích xây dựng",
+                                    "b. Dien tich xay dung"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": 1,
+                                "regex": "[aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ0123456789 ]+"
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 14,
+                    "name": "Diện tích xây dựng",
+                    "description": "",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "b. Diện tích xây dựng",
+                                    "b. Dien tich xay dung"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "c. Diện tích sản",
+                                    "c. Dien tich san"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": 1,
+                                "regex": "[aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ0123456789 ]+"
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 15,
+                    "name": "Diện tích sản",
+                    "description": "",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "c. Diện tích sản",
+                                    "c. Dien tich san"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "0",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "d. Hình thức sở hữu",
+                                    "d. Hinh thuc so huu"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": 1,
+                                "regex": "[aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ0123456789 ]+"
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 16,
+                    "name": "Hình thức sở hữu",
+                    "description": "",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "d. Hình thức sở hữu",
+                                    "d. Hinh thuc so huu"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "đ. Cấp (hạng)",
+                                    "đ. Cấp (hạng):",
+                                    "d. Cap (hang)"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": 1,
+                                "regex": "[aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ0123456789 ]+"
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 17,
+                    "name": "Cấp (Hạng)",
+                    "description": "",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "d. Cấp (hạng)",
+                                    "đ. Cấp (hạng):",
+                                    "d. Cap (hang)"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "0",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "e. Thời hạn sở hữu",
+                                    "e. Thoi han so huu"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "0",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": 1,
+                                "regex": "[aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ0123456789 ]+"
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 18,
+                    "name": "Thời hạn sở hữu",
+                    "description": "",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "e. Thời hạn sở hữu",
+                                    "e. Thoi han so huu"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "3. Công trình xây dựng khác",
+                                    "3. Cong trinh xay dung khac"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": 1,
+                                "regex": "[aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ0123456789 ]+"
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 19,
+                    "name": "Số phát hành GCN",
+                    "description": "",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Số phát hành GCN",
+                                    "Số phát hành GCN",
+                                    "phát hành GCN"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Số vào sổ cấp GCN",
+                                    "Số vào sổ cấp"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": 1,
+                                "regex": "[aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ0123456789 ]+"
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 20,
+                    "name": "Số vào sổ cấp GCN",
+                    "description": "",
+                    "type": "STRING",
+                    "rule": [
+                        {
+                            "name": "prefix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Số vào sổ cấp GCN",
+                                    "Số vào sổ cấp"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "10",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "suffix",
+                            "priority": 1,
+                            "params": {
+                                "value": [
+                                    "Nội dung thay đổi và cơ sở pháp lý"
+                                ],
+                                "start": "",
+                                "end": "",
+                                "compatible": "20",
+                                "new_line": false,
+                                "split_line": false
+                            }
+                        },
+                        {
+                            "name": "regex",
+                            "priority": 1,
+                            "params": {
+                                "max_line": 1,
+                                "regex": "[aAàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬbBcCdDđĐeEèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆfFgGhHiIìÌỉỈĩĨíÍịỊjJkKlLmMnNoOòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢpPqQrRsStTuUùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰvVwWxXyYỳỲỷỶỹỸýÝỵỴzZ0123456789 ]+"
+                            }
+                        },
+                        {
+                            "name": "contains",
+                            "priority": 1,
+                            "params": {
+                                "value": [],
+                                "compatible": "10"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

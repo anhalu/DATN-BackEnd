@@ -1,0 +1,627 @@
+{
+  "request_id": "405cbbf7-8bb4-4d89-aa2e-f1c199ae3018",
+  "from_page_idx": null,
+  "to_page_idx": null,
+  "group_forms": [
+    {
+      "id": 1,
+      "name": "IELTS",
+      "description": "",
+      "start_pattern": {
+        "values": [],
+        "operation": "AND",
+        "compatible": "0"
+      },
+      "end_pattern": {
+        "values": [],
+        "operation": "AND",
+        "compatible": "0"
+      },
+      "child_forms": [
+        {
+          "id": 295,
+          "name": "IELTS",
+          "description": "",
+          "start_pattern": {
+            "values": [],
+            "operation": "AND",
+            "compatible": "0"
+          },
+          "end_pattern": {
+            "values": [],
+            "operation": "AND",
+            "compatible": "0"
+          },
+          "fields": [
+            {
+              "id": 770,
+              "name": "Family Name",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [
+                      "Family Name"
+                    ],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "suffix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [
+                      "First Name"
+                    ],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "bounding_box",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "page_idx": 0,
+                    "bounding_box": [
+                      0,
+                      0.16,
+                      1,
+                      0.66
+                    ],
+                    "keep_box": false
+                  }
+                },                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  }
+                }
+              ],
+              "field_category": null
+            },            {
+              "id": 1390,
+              "name": "First Name",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [
+                      "First Name"
+                    ],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "suffix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [
+                      "Candidate ID"
+                    ],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "bounding_box",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "page_idx": 0,
+                    "bounding_box": [
+                      0.01,
+                      0.15,
+                      0.99,
+                      0.74
+                    ],
+                    "keep_box": false
+                  }
+                }
+              ],
+              "field_category": null
+            },
+            {
+              "id": 771,
+              "name": "Candidate ID",
+              "description": null,
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [
+                      "Candidate ID"
+                    ],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "suffix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [
+                      "Date of Birth"
+                    ],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "bounding_box",
+                  "isCustomRule": false,
+                  "priority": 1,
+                  "params": {
+                    "page_idx": 0,
+                    "bounding_box": [
+                      0.01,
+                      0.19,
+                      1,
+                      0.73
+                    ],
+                    "keep_box": false
+                  }
+                }
+              ],
+              "field_category": null
+            },
+            {
+              "id": 772,
+              "name": "Date of Birth",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [
+                      "Date of Birth",
+                      "Date o1 Binh"
+                    ],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "suffix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [
+                      "Sex (MP)",
+                      "Sex (M/F)"
+                    ],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "bounding_box",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "page_idx": 0,
+                    "bounding_box": [
+                      0.01,
+                      0.14,
+                      0.98,
+                      0.67
+                    ],
+                    "keep_box": false
+                  }
+                }
+              ],
+              "field_category": null
+            },
+            {
+              "id": 1391,
+              "name": "Sex(M/F)",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [
+                      "Sex (M/F)"
+                    ],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "suffix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [
+                      "Scheme Code",
+                      "Scheme Code"
+                    ],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "bounding_box",
+                  "isCustomRule": false,
+                  "priority": 1,
+                  "params": {
+                    "page_idx": 0,
+                    "bounding_box": [
+                      0.01,
+                      0.17,
+                      1,
+                      0.82
+                    ],
+                    "keep_box": false
+                  }
+                }
+              ],
+              "field_category": null
+            },
+            {
+              "id": 1392,
+              "name": "Country of Nationality",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [
+                      "Country of"
+                    ],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "suffix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [
+                      "Nationality"
+                    ],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "bounding_box",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "page_idx": 0,
+                    "bounding_box": [
+                      0.01,
+                      0.19,
+                      0.99,
+                      0.73
+                    ],
+                    "keep_box": false
+                  }
+                }
+              ],
+              "field_category": null
+            },
+            {
+              "id": 1393,
+              "name": "Listening",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [
+                      "Listening"
+                    ],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "suffix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [
+                      "Reading"
+                    ],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "bounding_box",
+                  "isCustomRule": false,
+                  "priority": 1,
+                  "params": {
+                    "page_idx": 0,
+                    "bounding_box": [
+                      0,
+                      0.22,
+                      1,
+                      0.83
+                    ],
+                    "keep_box": false
+                  }
+                },
+                {
+                  "name": "regex",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "regex": null,
+                    "max_line": 1,
+                    "word_exactly": false
+                  }
+                }
+              ],
+              "field_category": null
+            },
+            {
+              "id": 1394,
+              "name": "Reading",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [
+                      "Reading"
+                    ],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "suffix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [
+                      "Writing",
+                      "Writing"
+                    ],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "bounding_box",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "page_idx": 0,
+                    "bounding_box": [
+                      0.02,
+                      0.31,
+                      1,
+                      0.76
+                    ],
+                    "keep_box": false
+                  }
+                },
+                {
+                  "name": "regex",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "regex": null,
+                    "max_line": 1,
+                    "word_exactly": false
+                  }
+                }
+              ],
+              "field_category": null
+            },
+            {
+              "id": 1395,
+              "name": "Writing",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [
+                      "Writing"
+                    ],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "suffix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [
+                      "Speaking"
+                    ],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "bounding_box",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "page_idx": 0,
+                    "bounding_box": [
+                      0,
+                      0.19,
+                      1,
+                      0.77
+                    ],
+                    "keep_box": false
+                  }
+                },
+                {
+                  "name": "regex",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "regex": null,
+                    "max_line": 1,
+                    "word_exactly": false
+                  }
+                }
+              ],
+              "field_category": null
+            },
+            {
+              "id": 1396,
+              "name": "Speaking",
+              "description": "",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [
+                      "Speaking"
+                    ],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "suffix",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "values": [],
+                    "start": null,
+                    "end": null,
+                    "compatible": "0",
+                    "new_line": null,
+                    "split_line": null
+                  }
+                },
+                {
+                  "name": "regex",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "regex": null,
+                    "max_line": 1,
+                    "word_exactly": false
+                  }
+                },
+                {
+                  "name": "bounding_box",
+                  "isCustomRule": null,
+                  "priority": 1,
+                  "params": {
+                    "page_idx": 0,
+                    "bounding_box": [
+                      0.02,
+                      0.3,
+                      0.99,
+                      0.74
+                    ],
+                    "keep_box": false
+                  }
+                }
+              ],
+              "field_category": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

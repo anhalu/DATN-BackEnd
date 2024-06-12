@@ -1,0 +1,171 @@
+{
+  "request_id": "75ab6c9d-31c2-46ed-bf66-ca5778542e78",
+  "group_forms": [
+    {
+      "id": 1,
+      "name": "Nhóm giấy chứng nhận",
+      "child_forms": [
+        {
+          "id": 266,
+          "name": "GCNQSDĐ_V7(hungdv)",
+          "fields": [
+            {
+              "id": 1134,
+              "name": "số giấy chứng nhận",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "bounding_box",
+                  "params": {
+                    "keep_box": false,
+                    "page_idx": 0,
+                    "bounding_box": [
+                      0.86,
+                      0.81,
+                      0.98,
+                      0.98
+                    ]
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ],
+              "description": ""
+            },
+            {
+              "id": 1135,
+              "name": "Tên chủ sở hữu",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "Ông",
+                      "Bà"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "Sinh năm:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ],
+              "description": ""
+            },
+            {
+              "id": 1136,
+              "name": "Số giấy tở chủ sở hữu",
+              "type": "STRING",
+              "rules": [
+                {
+                  "name": "prefix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "CMTND số:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "suffix",
+                  "params": {
+                    "end": null,
+                    "start": null,
+                    "values": [
+                      "cấp ngày:"
+                    ],
+                    "new_line": null,
+                    "compatible": "10",
+                    "split_line": null
+                  },
+                  "priority": 1
+                },
+                {
+                  "name": "page_idx",
+                  "params": {
+                    "page_idx": 0
+                  },
+                  "priority": 1
+                }
+              ],
+              "description": ""
+            }
+          ],
+          "description": "",
+          "end_pattern": {
+            "values": [],
+            "operation": "AND",
+            "compatible": "15"
+          },
+          "start_pattern": {
+            "values": [
+              "GIẤY CHỨNG NHẬN QUYỀN SỬ DỤNG ĐẤT. QUYỀN sỞ HỮU NHÀ ở VÀ TÀI SẢN KHÁC GẮN LIỀN với ĐẤT"
+            ],
+            "operation": "AND",
+            "compatible": "20"
+          },
+          "form_rules": [
+            {
+              "id": 1,
+              "name": "form_rule_group_object",
+              "params": {
+                "main_field_id": 1135,
+                "list_field_in_object": [1135, 1136]
+              }
+            }
+          ]
+        }
+      ],
+      "description": "",
+      "end_pattern": {
+        "values": [],
+        "operation": "AND",
+        "compatible": "20"
+      },
+      "start_pattern": {
+        "values": [
+          "GIẤY CHỨNG NHẬN QUYỀN SỬ DỤNG ĐẤT"
+        ],
+        "operation": "AND",
+        "compatible": "20"
+      }
+    }
+  ],
+  "to_page_idx": null,
+  "from_page_idx": null
+}

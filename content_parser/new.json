@@ -1,0 +1,646 @@
+[
+  {
+    "id": 770,
+    "name": "Family Name",
+    "description": "",
+    "type": "STRING",
+    "rule": [
+      {
+        "name": "prefix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "Family Namg"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "suffix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "First Name"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "bounding_box",
+        "priority": 1,
+        "params": {
+          "page_idx": 0,
+          "bounding_box": [
+            0,
+            0.16,
+            1,
+            0.66
+          ],
+          "keep_box": false
+        }
+      }
+    ],
+    "field_category": null
+  },
+  {
+    "id": 771,
+    "name": "Candidate ID",
+    "description": null,
+    "type": "STRING",
+    "rule": [
+      {
+        "name": "prefix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "Candidate ID"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "suffix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "Date of Binh"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "bounding_box",
+        "priority": 1,
+        "params": {
+          "page_idx": 0,
+          "bounding_box": [
+            0.01,
+            0.15,
+            0.98,
+            0.73
+          ],
+          "keep_box": false
+        }
+      }
+    ],
+    "field_category": null
+  },
+  {
+    "id": 772,
+    "name": "Date of Birth",
+    "description": "",
+    "type": "STRING",
+    "rule": [
+      {
+        "name": "prefix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "Date of Binh"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "suffix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "Sax (MP"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "bounding_box",
+        "priority": 1,
+        "params": {
+          "page_idx": 0,
+          "bounding_box": [
+            0.01,
+            0.14,
+            0.98,
+            0.67
+          ],
+          "keep_box": false
+        }
+      },
+      {
+        "name": "regex",
+        "priority": 1,
+        "params": {
+          "regex": null,
+          "max_line": 1,
+          "word_exactly": false
+        }
+      }
+    ],
+    "field_category": null
+  },
+  {
+    "id": 1390,
+    "name": "First Name",
+    "description": "",
+    "type": "STRING",
+    "rule": [
+      {
+        "name": "prefix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "First Name"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "suffix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "Candidate ID"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "bounding_box",
+        "priority": 1,
+        "params": {
+          "page_idx": 0,
+          "bounding_box": [
+            0.01,
+            0.15,
+            0.99,
+            0.74
+          ],
+          "keep_box": false
+        }
+      }
+    ],
+    "field_category": null
+  },
+  {
+    "id": 1391,
+    "name": "Sex(M/F)",
+    "description": "",
+    "type": "STRING",
+    "rule": [
+      {
+        "name": "prefix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "Sax (MP",
+            "Nationality"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "15",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "suffix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "Schame Code"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "bounding_box",
+        "priority": 1,
+        "params": {
+          "page_idx": 0,
+          "bounding_box": [
+            0.01,
+            0.19,
+            0.98,
+            0.6
+          ],
+          "keep_box": false
+        }
+      }
+    ],
+    "field_category": null
+  },
+  {
+    "id": 1392,
+    "name": "Country of Nationality",
+    "description": "",
+    "type": "STRING",
+    "rule": [
+      {
+        "name": "prefix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "Country gt"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "suffix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "Nationality"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "bounding_box",
+        "priority": 1,
+        "params": {
+          "page_idx": 0,
+          "bounding_box": [
+            0.01,
+            0.19,
+            0.99,
+            0.73
+          ],
+          "keep_box": false
+        }
+      }
+    ],
+    "field_category": null
+  },
+  {
+    "id": 1393,
+    "name": "Listening",
+    "description": "",
+    "type": "STRING",
+    "rule": [
+      {
+        "name": "prefix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "Listening"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "suffix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "Reading"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "bounding_box",
+        "priority": 1,
+        "params": {
+          "page_idx": 0,
+          "bounding_box": [
+            0.04,
+            0.29,
+            0.97,
+            0.68
+          ],
+          "keep_box": false
+        }
+      },
+      {
+        "name": "regex",
+        "priority": 1,
+        "params": {
+          "regex": null,
+          "max_line": 1,
+          "word_exactly": false
+        }
+      }
+    ],
+    "field_category": null
+  },
+  {
+    "id": 1394,
+    "name": "Reading",
+    "description": "",
+    "type": "STRING",
+    "rule": [
+      {
+        "name": "prefix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "Reading"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "suffix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "Wriing"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "bounding_box",
+        "priority": 1,
+        "params": {
+          "page_idx": 0,
+          "bounding_box": [
+            0.02,
+            0.31,
+            1,
+            0.76
+          ],
+          "keep_box": false
+        }
+      },
+      {
+        "name": "regex",
+        "priority": 1,
+        "params": {
+          "regex": null,
+          "max_line": 1,
+          "word_exactly": false
+        }
+      }
+    ],
+    "field_category": null
+  },
+  {
+    "id": 1395,
+    "name": "Writing",
+    "description": "",
+    "type": "STRING",
+    "rule": [
+      {
+        "name": "prefix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "Wriing"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "suffix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "Speaking"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "bounding_box",
+        "priority": 1,
+        "params": {
+          "page_idx": 0,
+          "bounding_box": [
+            0,
+            0.19,
+            1,
+            0.77
+          ],
+          "keep_box": false
+        }
+      },
+      {
+        "name": "regex",
+        "priority": 1,
+        "params": {
+          "regex": null,
+          "max_line": 1,
+          "word_exactly": false
+        }
+      }
+    ],
+    "field_category": null
+  },
+  {
+    "id": 1396,
+    "name": "Speaking",
+    "description": "",
+    "type": "STRING",
+    "rule": [
+      {
+        "name": "prefix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "Speaking"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "suffix",
+        "priority": 1,
+        "params": {
+          "value": [],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "regex",
+        "priority": 1,
+        "params": {
+          "regex": null,
+          "max_line": 1,
+          "word_exactly": false
+        }
+      },
+      {
+        "name": "bounding_box",
+        "priority": 1,
+        "params": {
+          "page_idx": 0,
+          "bounding_box": [
+            0.02,
+            0.3,
+            0.99,
+            0.74
+          ],
+          "keep_box": false
+        }
+      }
+    ],
+    "field_category": null
+  },
+  {
+    "id": 1397,
+    "name": "Overall Band Score",
+    "description": "",
+    "type": "STRING",
+    "rule": [
+      {
+        "name": "prefix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "Band"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "suffix",
+        "priority": 1,
+        "params": {
+          "value": [],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "regex",
+        "priority": 1,
+        "params": {
+          "regex": "",
+          "max_line": 1,
+          "word_exactly": false
+        }
+      }
+    ],
+    "field_category": null
+  },
+  {
+    "id": 1398,
+    "name": "CEFR",
+    "description": "",
+    "type": "STRING",
+    "rule": [
+      {
+        "name": "prefix",
+        "priority": 1,
+        "params": {
+          "value": [
+            "CEFH"
+          ],
+          "start": null,
+          "end": null,
+          "compatible": "10",
+          "new_line": null,
+          "split_line": null
+        }
+      },
+      {
+        "name": "regex",
+        "priority": 1,
+        "params": {
+          "regex": null,
+          "max_line": 1,
+          "word_exactly": false
+        }
+      },
+      {
+        "name": "bounding_box",
+        "priority": 1,
+        "params": {
+          "page_idx": 0,
+          "bounding_box": [
+            0.01,
+            0.4,
+            1,
+            0.86
+          ],
+          "keep_box": false
+        }
+      }
+    ],
+    "field_category": null
+  }
+]
