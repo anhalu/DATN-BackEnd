@@ -13,3 +13,7 @@ reader/output
 *.pdf
 reader/models
 logs
+*.jpg
+*.jpeg
+.env
+*.txt
